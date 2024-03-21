@@ -15,7 +15,7 @@ class Videogame
     private Genre $genre;
     private float $price;
 
-    public function __construct($name, $studio, $genre, $price)
+    public function __construct(string $name, string $studio, Genre $genre, float $price)
     {
         $this->name = $name;
         $this->studio = $studio;
@@ -23,22 +23,22 @@ class Videogame
         $this->price = $price;
     }
 
-    public function getName()
+    public function getName(): string
     {
         return $this->name;
     }
 
-    public function getStudio()
+    public function getStudio(): string
     {
         return $this->studio;
     }
 
-    public function getGenre()
+    public function getGenre(): Genre
     {
         return $this->genre;
     }
 
-    public function getPrice()
+    public function getPrice(): float
     {
         return $this->price;
     }
